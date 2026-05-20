@@ -94,6 +94,8 @@ const login = async (req, res) => {
         email: user.email,
         mode: user.mode,
         role: user.role,
+        demographics: user.demographics || {},
+        createdAt: user.createdAt,
       },
     });
   } catch (error) {
