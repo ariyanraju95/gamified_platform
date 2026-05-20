@@ -1,0 +1,58 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+**/node_modules/
+
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+
+# ── Build output ──────────────────────────────────────────────────────────────
+client/dist/
+client/build/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# ── OS & editor files ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Test output & coverage ────────────────────────────────────────────────────
+coverage/
+**/coverage/
+client/cypress/videos/
+client/cypress/screenshots/
+client/cypress/downloads/
+.nyc_output/
+
+# ── Dissertation & academic files (keep off public repo) ─────────────────────
+dissertation/
+dissertation-assets/
+DISSERTATION_PLAN.md
+AE1_DIS.pdf
+COM629_Dis_Template_2024_v5*.docx
+QHO634_2025-26-AE2*.docx
+survey_data_sheet*.xlsx
+*.xlsx
+*.docx
+*.pdf
+
+# ── Research scripts & seed data (private) ───────────────────────────────────
+scripts/
+server/seed/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.tgz
+*.zip
